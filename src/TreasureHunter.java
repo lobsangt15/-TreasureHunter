@@ -16,6 +16,19 @@ public class TreasureHunter {
     private Town currentTown;
     private Hunter hunter;
     private boolean hardMode;
+    private boolean easyMode;
+    private boolean normalMode;
+
+    public boolean getEasyMode() {
+        return easyMode;
+    }
+    public boolean getHardMode() {
+        return hardMode;
+    }
+    public boolean getNormalMode() {
+        return normalMode;
+    }
+
 
     /**
      * Constructs the Treasure Hunter game.
@@ -25,6 +38,8 @@ public class TreasureHunter {
         currentTown = null;
         hunter = null;
         hardMode = false;
+        easyMode = false;
+        normalMode = false;
     }
 
     /**
@@ -48,11 +63,29 @@ public class TreasureHunter {
         // set hunter instance variable
         hunter = new Hunter(name, 20);
 
-        System.out.print("Hard mode? (y/n): ");
+        System.out.print("Difficulty ([e]asy, [n]ormal, [h]ard : ");
         String hard = SCANNER.nextLine().toLowerCase();
-        if (hard.equals("y")) {
+        if (hard.equals("h")) {
             hardMode = true;
             hunter.changeGold(80);
+            String items[] = {"Water", "Rope", "Machete", "Horse", "Boat"};
+            for (String itm : items) {
+                hunter.addItem(itm);
+            }
+            hunter.getInventory();
+        }
+        else if (hard.equals("e")) {
+            easyMode = true;
+            hunter.changeGold(20);
+            String items[] = {"Water", "Rope", "Machete", "Horse", "Boat"};
+            for (String itm : items) {
+                hunter.addItem(itm);
+            }
+            hunter.getInventory();
+        }
+        else if (hard.equals("n")) {
+            normalMode = true;
+            hunter.changeGold(0);
             String items[] = {"Water", "Rope", "Machete", "Horse", "Boat"};
             for (String itm : items) {
                 hunter.addItem(itm);
@@ -74,6 +107,20 @@ public class TreasureHunter {
             // and the town is "tougher"
             toughness = 0.75;
         }
+        if (easyMode) {
+            // in hard mode, you get less money back when you sell items
+            markdown = 0;
+
+            // and the town is "tougher"
+            toughness = 0.3;
+        }
+        if (normalMode) {
+            // in hard mode, you get less money back when you sell items
+            markdown = .25;
+
+            // and the town is "tougher"
+            toughness = .4;
+        }
 
         // note that we don't need to access the Shop object
         // outside of this method, so it isn't necessary to store it as an instance
@@ -83,7 +130,7 @@ public class TreasureHunter {
         // creating the new Town -- which we need to store as an instance
         // variable in this class, since we need to access the Town
         // object in other methods of this class
-        currentTown = new Town(shop, toughness);
+        currentTown = new Town(shop, toughness, this);
 
         // calling the hunterArrives method, which takes the Hunter
         // as a parameter; note this also could have been done in the
