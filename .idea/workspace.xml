@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="Completed TH-2" />
+    <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter">
+      <change beforePath="$PROJECT_DIR$/src/TreasureHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreasureHunter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,12 +28,12 @@
     &quot;assignee&quot;: &quot;chasewongbudiman&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/lobsangt15/-TreasureHunter.git",
-    "accountId": "7c40d00f-4292-4429-983a-57ac6c6c7d3e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lobsangt15/-TreasureHunter.git&quot;,
+    &quot;accountId&quot;: &quot;7c40d00f-4292-4429-983a-57ac6c6c7d3e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -67,13 +69,34 @@
       <option name="project" value="LOCAL" />
       <updated>1736867184735</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter">
+      <option name="closed" value="true" />
+      <created>1736869241725</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736869241725</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed TH-2" />
     <MESSAGE value="Completed TH-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed TH-1" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter" />
+    <option name="LAST_COMMIT_MESSAGE" value="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
