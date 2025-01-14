@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hunter.java" afterDir="false" />
-    </list>
+    <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="Completed TH-2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +59,21 @@
       <option name="presentableId" value="Default" />
       <updated>1736780872134</updated>
     </task>
+    <task id="LOCAL-00001" summary="Completed TH-2">
+      <option name="closed" value="true" />
+      <created>1736867184735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736867184735</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed TH-2" />
+    <MESSAGE value="Completed TH-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed TH-1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
