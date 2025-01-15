@@ -68,7 +68,7 @@ public class TreasureHunter {
         if (hard.equals("h")) {
             hardMode = true;
             hunter.changeGold(80);
-            String items[] = {"Water", "Rope", "Machete", "Horse", "Boat"};
+            String items[] = {"Water", "Rope", "Machete", "Horse", "Boat", "Boot"};
             for (String itm : items) {
                 hunter.addItem(itm);
             }
@@ -77,20 +77,10 @@ public class TreasureHunter {
         else if (hard.equals("e")) {
             easyMode = true;
             hunter.changeGold(20);
-            String items[] = {"Water", "Rope", "Machete", "Horse", "Boat"};
-            for (String itm : items) {
-                hunter.addItem(itm);
-            }
-            hunter.getInventory();
         }
         else if (hard.equals("n")) {
             normalMode = true;
             hunter.changeGold(0);
-            String items[] = {"Water", "Rope", "Machete", "Horse", "Boat"};
-            for (String itm : items) {
-                hunter.addItem(itm);
-            }
-            hunter.getInventory();
         }
     }
 

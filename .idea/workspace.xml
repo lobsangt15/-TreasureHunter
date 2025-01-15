@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter">
+    <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="completed TH-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hunter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Town.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Town.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TreasureHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreasureHunter.java" afterDir="false" />
     </list>
@@ -55,6 +56,20 @@
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/BT_1N3_15/IdeaProjects/TreasureHunter/src/Main.java&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="TreasureHunterRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TreasureHunterRunner" />
+      <module name="TreasureHunter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TreasureHunterRunner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736869241725</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="completed TH-3">
+      <option name="closed" value="true" />
+      <created>1736953317115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736953317115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,7 +122,8 @@
     <MESSAGE value="Completed TH-1" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter" />
-    <option name="LAST_COMMIT_MESSAGE" value="resent Completed Ticket 8 &#10;adjusted Town and TreasureHunter" />
+    <MESSAGE value="completed TH-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed TH-3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

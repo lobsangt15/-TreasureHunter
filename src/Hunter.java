@@ -18,7 +18,7 @@ public class Hunter {
      */
     public Hunter(String hunterName, int startingGold) {
         this.hunterName = hunterName;
-        kit = new String[5]; // only 5 possible items can be stored in kit
+        kit = new String[6]; // only 5 possible items can be stored in kit
         gold = startingGold;
     }
 
@@ -132,7 +132,6 @@ public class Hunter {
     public String getInventory() {
         String printableKit = Colors.PURPLE +"" + Colors.RESET;
         String space = " ";
-
         for (String item : kit) {
             if (item != null) {
                 printableKit += Colors.PURPLE + item +  Colors.RESET + space;
