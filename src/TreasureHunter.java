@@ -102,7 +102,7 @@ public class TreasureHunter {
         double toughness = 0.4;
         if (hardMode) {
             // in hard mode, you get less money back when you sell items
-            markdown = 0.5;
+            markdown = 0.25;
 
             // and the town is "tougher"
             toughness = 0.75;
@@ -116,7 +116,7 @@ public class TreasureHunter {
         }
         if (normalMode) {
             // in hard mode, you get less money back when you sell items
-            markdown = .25;
+            markdown = .5;
 
             // and the town is "tougher"
             toughness = .4;
