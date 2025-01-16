@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9dbdf689-c34f-4b0b-a6a9-7becd07f278e" name="Changes" comment="completed TH-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Town.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Town.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TreasureHunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreasureHunter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +32,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/lobsangt15/-TreasureHunter.git",
-    "accountId": "a0bb9bbe-85bd-48f5-bb18-0a529975508e"
+    "accountId": "a24e81bb-60b1-4c72-bcec-6d875e8aa068"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
