@@ -49,3 +49,4 @@ public class Terrain {
         return "You are surrounded by " + Colors.CYAN + terrainName + Colors.RESET + " which needs a(n) " + neededItem + " to cross.";
     }
 }
+//

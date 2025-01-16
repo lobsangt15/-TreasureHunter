@@ -172,4 +172,4 @@ public class Town {
         return (rand < 0.5);
     }
 }
-// e
+//
