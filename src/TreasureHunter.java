@@ -18,6 +18,10 @@ public class TreasureHunter {
     private boolean hardMode;
     private boolean easyMode;
     private boolean normalMode;
+    private String treasure;
+    private String[] treasureFound;
+    private boolean searched;
+    int index = 0;
 
     public boolean getEasyMode() {
         return easyMode;
@@ -88,6 +92,9 @@ public class TreasureHunter {
      * Creates a new town and adds the Hunter to it.
      */
     private void enterTown() {
+        String treasures[] = {"crown", "trophy", "gem", "dust"};
+        int idx = (int)(Math.random() * 3);
+        treasure = treasures[idx];
         double markdown = 0.25;
         double toughness = 0.4;
         if (hardMode) {
@@ -129,6 +136,11 @@ public class TreasureHunter {
         currentTown.hunterArrives(hunter);
     }
 
+    public String searchForTreasure() {
+        treasureFound[index] = treasure;
+        index++;
+        return "You found a " + treasure;
+    }
     /**
      * Displays the menu and receives the choice from the user.<p>
      * The choice is sent to the processChoice() method for parsing.<p>
@@ -151,8 +163,8 @@ public class TreasureHunter {
                 System.out.println("(S)ell something at the shop.");
                 System.out.println("(E)xplore surrounding terrain.");
                 System.out.println("(M)ove on to a different town.");
-                System.out.println("(D)ig for gold!");
                 System.out.println("(L)ook for trouble!");
+                System.out.println("(H)unt for treasure");
                 System.out.println("Give up the hunt and e(X)it.");
                 System.out.println();
                 System.out.print("What's your next move? ");
@@ -176,11 +188,17 @@ public class TreasureHunter {
                 // This town is going away so print its news ahead of time.
                 System.out.println(currentTown.getLatestNews());
                 enterTown();
+                searched = false;
             }
         } else if (choice.equals("l")) {
             currentTown.lookForTrouble();
-        } else if (choice.equals("d")) {
-
+        } else if (choice.equals("h")) {
+            if (searched) {
+                System.out.println("You have already searched this town!");
+            } else {
+                searchForTreasure();
+                searched = true;
+            }
         } else if (choice.equals("x")) {
             System.out.println("Fare thee well, " + hunter.getHunterName() + "!");
         } else {
@@ -188,3 +206,4 @@ public class TreasureHunter {
         }
     }
 }
+//e
