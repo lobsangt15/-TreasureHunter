@@ -14,6 +14,7 @@ public class Town {
     private String printMessage;
     private boolean toughTown;
     private TreasureHunter th;
+    private boolean dugGoldAlready;
 
     /**
      * The Town Constructor takes in a shop and the surrounding terrain, but leaves the hunter as null until one arrives.
@@ -33,6 +34,7 @@ public class Town {
 
         // higher toughness = more likely to be a tough town
         toughTown = (Math.random() < toughness);
+        dugGoldAlready = false;
     }
 
     public Terrain getTerrain() {
@@ -118,6 +120,22 @@ public class Town {
         }
     }
 
+    public void digGold() {
+        if (!hunter.hasItemInKit("shovel")) {
+            System.out.println("You can't dig without a shovel");
+        } else if (dugGoldAlready) {
+            System.out.println("You already dug for gold in this town.");
+        } else {
+            double chance = .5 * Math.random();
+            if (chance < .5) {
+                int goldFound = (int) (Math.random() * 20) + 1;
+                System.out.println("You found" + goldFound + "gold");
+            }
+            else {
+                System.out.println("you found dirt...");
+        } dugGoldAlready = true;
+        }
+    }
     public String infoString() {
         return "This nice little town is surrounded by " + Colors.CYAN + terrain.getTerrainName() + Colors.RESET + ".";
     }
